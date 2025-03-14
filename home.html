@@ -1,0 +1,520 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<title>Home Ground Development</title>
+</head>
+<body>
+<style>
+.banner-block {
+		-webkit-backdrop-filter: blur(30px);
+		backdrop-filter: blur(30px);
+		background-image: url(pic1.jpg);
+	background-size: cover;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+	}
+
+.banner-table{
+background-color: rgba(255, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  padding: 150px;
+  margin: 30px;
+  font-weight: bold;
+}
+
+.logo-img{
+	width: 20%;
+	margin-bottom: 20px;
+}
+
+.banner-row-1 {
+font-size: 50px;
+color: black;
+font-weight: 700;
+}
+
+.banner-row-2 {
+font-size: 30px;
+color: black;
+font-weight: 700;
+}
+	
+	@media (max-width: 760px) {
+.banner-row-1 {
+font-size: 10px;
+text-align: center;
+color: black;
+font-weight: 700;
+}
+
+.banner-row-2 {
+font-size: 10px;
+color: black;
+text-align: center;
+font-weight: 700;
+}
+		
+		.logo-img{
+	width: 100%;
+	margin-bottom: 20px;
+}
+}
+
+</style>
+					<div class="banner-block">
+						<div class="banner-table">
+							<div class="banner-row">
+							<img src="library/logos/hgd_transparent_logo.png" alt="" class="logo-img"/>
+							</div>
+							<div class="banner-row-1">
+							HOME GROUND DEVELOPMENT
+							</div>
+							<div class="banner-row-2">
+							GIVING YOU THE HOME GROUND ADVANTAGE
+							</div>
+						</div>
+					</div>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+	
+a {
+  text-decoration: none;
+}
+
+.nav-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  transition: all 0.3s ease;
+  z-index: 3;
+margin-top: 70px;
+}
+
+.nav-table {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 75px;
+  background: #ff6501;
+  z-index: 10;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.nav-cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  color: black;
+  letter-spacing: 5px;
+  transition: all 0.5s ease;
+  font-size: 15px;
+	font-weight: 600;
+}
+
+.nav-cell:hover {
+  color: #ff6501;
+  background: black;
+  transition: all 0.5s ease;
+}
+
+.nav-cell-slider {
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: #03dac6;
+  transition: left 0.3s ease;
+}
+@media (min-width: 760px) {
+.nav-cell {
+  font-size: 20px;
+}
+}
+
+</style>
+<div class="nav-block">
+  <div class="nav-table">
+	  <a class="nav-cell" href="#tab-svelte">WHO ARE WE?</a>
+	  <a class="nav-cell" href="#tab-esbuild">WHY CHOOSE US?</a>
+	  <a class="nav-cell" href="#tab-next">SEE OUR WORK</a>
+	  <a class="nav-cell" href="#tab-typescript">GET IN TOUCH</a>
+	</div>
+	</div>
+<style>	
+
+.body-row-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: black;
+  text-align: center;
+  color: #ff6501;
+  transition: all 0.3s ease;
+  z-index: 3;
+	padding: 30px;
+}
+	
+.body-table-2{
+display: flex;
+flex-direction: column;
+	}
+	
+	.body-row-3{ display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: black;
+  text-align: center;
+  color: #ff6501;
+  transition: all 0.3s ease;
+  z-index: 3;
+	padding: 30px;}
+	
+.body-row-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: black;
+  text-align: center;
+  color: #ff6501;
+  transition: all 0.3s ease;
+  z-index: 3;
+	padding: 30px;
+}
+	
+.body-row-4 {
+  display: flex;
+  flex-direction: row;
+	justify-content: center;
+  position: relative;
+  background-color: black;
+  text-align: center;
+  transition: all 0.3s ease;
+  z-index: 3;
+	padding: 30px;
+}
+
+	.body-cell-head{
+		display: flex;
+		color:#ff6501;
+		font-size: 30px;
+	}
+	
+	.body-cell-text{
+		color:white;
+		font-size: 20px;
+		text-align: left;
+		max-width: 600px;
+	}
+
+.body-cell-1 {
+  font-size: 30px;
+	padding: 20px;
+  letter-spacing: 0.3rem;
+  font-weight: 300;
+  color: #faebd7;
+  z-index: 4;
+}
+	
+	.body-cell-4{
+		display: flex;
+		flex-direction: row;
+		text-align: center;
+		font-size: 20px;
+	padding: 20px;
+  letter-spacing: 0.3rem;
+  font-weight: 300;
+  z-index: 4;
+	}
+	
+	.body-cell-contents-wrapper{
+		display: flex;
+		flex-direction: row;
+	}
+
+	.body-cell-contents{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.list-icon{
+		width: 40px;
+		height: 40px;
+		margin-right: 10px;
+	}
+	
+	.estate-icon-row-1{
+		padding-right: 100px;
+	}
+	
+	.contact-cell-contents{
+	display: flex;
+		flex-direction: column;
+		padding-left: 150px;
+		padding-right: 150px;
+	}
+	
+	.owner-icon-1{
+		width: 200px;
+		border-radius: 50%;
+		border: 6px solid #ff6501;
+	}
+	
+	.owner-icon-2{
+		width: 195px;
+		border-radius: 50%;
+		border: 6px solid #ff6501;
+	}
+	
+	.contact-cell-head{
+		color: #ff6501;
+		font-size: 40px;
+		font-weight: 700;
+		text-align: center;
+	}
+	
+	.contact-cell-text{
+		color: #ff6501;
+		font-size: 20px;
+		text-align: center;
+	}
+	
+	.contact-intro-1{
+		color: black;
+		font-size: 60px;
+		text-align: center;
+		 background-color: #ff6501;
+		padding: 30px;
+		font-weight: 800;
+	}
+	
+	.footer-table {
+  display: flex;
+  flex-direction: row;
+	justify-content: center;
+  position: relative;
+  background-color: #ff6501;
+  text-align: center;
+  transition: all 0.3s ease;
+  z-index: 3;
+	padding: 30px;
+}
+	.design-by-link{text-decoration: none;
+	color: black;}
+
+</style>
+<div class="body-block">
+
+<div class="body-table-1">
+  <div class="body-row-1" id="tab-svelte">
+   <div class="body-cell-1">Home Ground Developments is a trusted construction company with nearly 30 years of experience delivering outstanding residential and development projects.
+	  </div>
+	   <div class="body-cell-1">Led by Paul, a BTech-qualified Quantity Surveyor, and supported by his son, Jason, the company has built a strong reputation through successful projects across KwaZulu-Natal and beyond.
+	  </div>
+	<div class="body-cell-1">In 2024, after 25 years in the region, we relocated to Gansbaai, continuing to expand our portfolio with notable projects like Romansbaai Beach and Fynbos Estate.</div>
+  </div>
+	</div>
+
+	<div class="body-table-2">
+
+  <div class="body-row-2" id="tab-esbuild">
+     <div class="body-cell-2">
+		 <div class="body-cell-contents-wrapper">
+		<img src="library/icons/1.png" alt="list-icon" class="list-icon" />
+		 <div class="body-cell-contents">
+		 <div class="body-cell-head">
+			 Decades of Industry Expertise
+		 </div>
+		 <div class="body-cell-text">With nearly 30 years in the construction industry, we have the experience and know-how to manage and deliver a diverse range of residential and development projects with exceptional results.
+		 </div>
+		</div>
+		 </div>
+	  </div>
+	   <div class="body-cell-2">
+		   <div class="body-cell-contents-wrapper">
+		<img src="library/icons/2.png" alt="list-icon" class="list-icon" />
+		 <div class="body-cell-contents">
+		 <div class="body-cell-head">Family-Driven Excellence
+		 </div>
+		 <div class="body-cell-text">We are a family-run business where Paul and his son Jason work side by side. Jason’s invaluable contribution as a capable on-site project manager ensures that each project runs smoothly from start to finish.
+		 </div>
+		</div>
+		 </div>
+	  </div>
+		</div>
+		
+		<div class="body-row-2">
+     <div class="body-cell-2">
+		 <div class="body-cell-contents-wrapper">
+		<img src="library/icons/3.png" alt="list-icon" class="list-icon" />
+		 <div class="body-cell-contents">
+		 <div class="body-cell-head">
+			 Prestigious Track Record in Estates
+		 </div>
+		 <div class="body-cell-text">Our portfolio includes numerous successful residential projects in top estates across KwaZulu-Natal, including Summerset Park, Mt Edgecombe, Cotswold Downs, and Romansbaai Beach & Fynbos Estate. These projects showcase our ability to meet the highest standards in exclusive developments.
+		 </div>
+		</div>
+		 </div>
+	  </div>
+	   <div class="body-cell-2">
+		   <div class="body-cell-contents-wrapper">
+		<img src="library/icons/4.png" alt="list-icon" class="list-icon" />
+		 <div class="body-cell-contents">
+		 <div class="body-cell-head">Expertise in Development
+		 </div>
+		 <div class="body-cell-text">Beyond construction, Paul’s expertise extends into property development, having completed four sectional title developments in Hillcrest Village over the past six to eight years. We bring a holistic approach to every project, from initial planning to final execution.
+		 </div>
+		</div>
+		 </div>
+	  </div>
+		</div>
+		
+		<div class="body-row-2">
+     <div class="body-cell-2">
+		 <div class="body-cell-contents-wrapper">
+		<img src="library/icons/5.png" alt="list-icon" class="list-icon" />
+		 <div class="body-cell-contents">
+		 <div class="body-cell-head">
+			 Long-Term Success in Multiple Regions
+		 </div>
+		 <div class="body-cell-text">After 25 years of success in KwaZulu-Natal, we relocated to Gansbaai in 2024. We continue to expand our portfolio with significant projects such as the Romansbaai Beach and Fynbos Estate, demonstrating our ability to thrive in new regions while maintaining our high standards.
+		 </div>
+		</div>
+		 </div>
+	  </div>
+	   <div class="body-cell-2">
+		   <div class="body-cell-contents-wrapper">
+		<img src="library/icons/6.png" alt="list-icon" class="list-icon" />
+		 <div class="body-cell-contents">
+		 <div class="body-cell-head">Client Collaboration
+		 </div>
+		 <div class="body-cell-text">We believe in strong partnerships with land sales teams, architects, and clients. We are committed to working closely with you to bring your vision to life and create lasting relationships based on trust and quality results.
+		 </div>
+		</div>
+		 </div>
+	  </div>
+		</div>
+<div class="body-table-3">			
+  <div class="body-row-3" id="tab-next">
+     <div class="body-cell-1">Not yet convinced? Explore our portfolio of previous projects by clicking on the logos below of the estates we've built.
+	  </div>
+	</div>
+  </div>
+	<div class="body-table-2">
+
+  <div class="body-row-2">
+     <div class="body-cell-2">
+		 <a href="https://www.gatedestates.co.za/results/estate/residential/hillcrest/kirtlington-park/1313/" rel="noreferrer" target="_blank" class="design-by-link">
+		<img src="library/portfolio/gated.png" alt="estate-icon" class="estate-icon-row-1" />
+		 </a>
+	  </div>
+	 <div class="body-cell-2">
+		 <a href="https://www.romansbaai.co.za/" rel="noreferrer" target="_blank" class="design-by-link">
+			<img src="library/portfolio/romansbaai.png" alt="estate-icon" class="estate-icon-row-1" />
+		 </a>
+	  </div>
+	   <div class="body-cell-2">
+		   <a href="https://langfordcountryestate.co.za/" rel="noreferrer" target="_blank" class="design-by-link">
+			<img src="library/portfolio/langford.png" alt="estate-icon" class="estate-icon-row-1" />
+		   </a>
+	  </div>
+		</div>
+    <div class="body-row-2">
+     <div class="body-cell-2">
+		 <a href="https://plantationsestate.co.za/" rel="noreferrer" target="_blank" class="design-by-link">
+			<img src="library/portfolio/plantations.png" alt="estate-icon" class="estate-icon-row-2" />
+		 </a>
+	  </div>
+		 <div class="body-cell-2">
+			 <a href="https://www.property24.com/for-sale/hillcrest-central/hillcrest/kwazulu-natal/17985/115620466" rel="noreferrer" target="_blank" class="design-by-link">
+			<img src="library/portfolio/property24.png" alt="estate-icon" class="estate-icon-row-2" />
+			 </a>
+	  </div>
+	 <div class="body-cell-2">
+		 <a href="https://www.augusta.co.za/" rel="noreferrer" target="_blank" class="design-by-link">
+			<img src="library/portfolio/augusta.png" alt="estate-icon" class="estate-icon-row-2" />
+		 </a>
+	  </div>
+		</div>
+		  <div class="body-row-2">
+     <div class="body-cell-2">
+		 <a href="https://cotswolddowns.co.za/" rel="noreferrer" target="_blank" class="design-by-link">
+			<img src="library/portfolio/cotswold.png" alt="estate-icon" class="estate-icon-row-2" />
+		 </a>
+	  </div>
+		 <div class="body-cell-2">
+			 <a href="https://www.somersetpark.co.za/" rel="noreferrer" target="_blank" class="design-by-link">
+			<img src="library/portfolio/somerset.png" alt="estate-icon" class="estate-icon-row-2" />
+			 </a>
+	  </div>
+			  <div class="body-cell-2">
+			 <a href="https://www.mountedgecombe.com/" rel="noreferrer" target="_blank" class="design-by-link">
+			<img src="library/portfolio/mountedge.png" alt="estate-icon" class="estate-icon-row-2" />
+			 </a>
+	  </div>
+		</div>
+		</div>
+	</div>
+<div class="body-table-4">
+	<div class="contact-intro-1">BOOK A FREE CONSULTATION TODAY!
+	  </div>
+  <div class="body-row-4" id="tab-typescript">
+	  
+      <div class="body-cell-4">
+		  	 <div class="contact-cell-contents">
+		 <div class="owner-img-div"><img src="library/contact/paul.png" alt="owner-icon" class="owner-icon-1" /></div>
+		 <div class="contact-cell-head">
+			 Paul Dorrofield
+		 </div>
+		 <div class="contact-cell-text">0827878568 
+		 </div>
+				  <div class="contact-cell-text">paul@hgbuild.co.za 
+		 </div>
+		</div>
+		  
+		  <div class="contact-cell-contents">
+		
+		 <div class="owner-img-div"><img src="library/contact/jason.png" alt="owner-icon" class="owner-icon-2" /></div>
+		 <div class="contact-cell-head">Jason Dorrofield
+		 </div>
+		<div class="contact-cell-text">0614465241
+		 </div>
+				  <div class="contact-cell-text">jason@hgbuild.co.za 
+		 </div>
+		</div>
+  </div>
+	</div>
+	</div>
+	<footer id="footer" class="footer-block">
+				<div class="footer-table">
+					<div class="footer-menu">
+						<div class="rights-reserved">&copy; Home Ground Developent. All rights reserved.</div>
+						<div class="design-by">Design: <a href="https://your-digital-architect.onrender.com/" rel="noreferrer" target="_blank" class="design-by-link">Neethling Development</a></div>
+					</div>
+				</div>
+			</footer>
+	</div>
+</body>
+</html>
